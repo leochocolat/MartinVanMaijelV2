@@ -1,5 +1,5 @@
 <template>
-  <main class="main page-home">
+  <main class="main page-project">
     <div class="scroll-container">
       <HeaderProject :data="data" />
       <SectionProject :data="data" />

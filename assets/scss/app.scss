@@ -22,6 +22,7 @@
 */
 @import "headers/header-home";
 @import "headers/header-project";
+@import "headers/header-archives";
 
 /**
 * Sections
@@ -34,3 +35,5 @@
 * Pages
 */
 @import "pages/page-home";
+@import "pages/page-project";
+@import "pages/page-archives";
