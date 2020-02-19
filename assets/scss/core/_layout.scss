@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+
+    max-width: 1150px;
+    width: 80%;
+    
+    margin: auto;
+
+    &--big {
+        max-width: 1300px;
+        width: 95%;
+    }
+}
+
+@include mq-extra-narrow {
+    .container {
+        width: 100%;
+    }
+}

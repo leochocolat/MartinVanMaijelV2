@@ -1,0 +1,59 @@
+.giant-heading {
+    font-family: $monarch;
+    font-size: rem(250px);
+    text-transform: lowercase;
+    line-height: .82em;
+    color: $yellow;
+
+    &--small {
+        font-size: rem(250px);
+    }
+}
+
+.heading {
+    font-family: $postGrotesk;
+    font-size: rem(32px);
+    letter-spacing: -1px;
+    line-height: 1.2em;
+}
+
+.subheading {
+    font-family: $postGrotesk;
+    font-size: rem(20px);
+    letter-spacing: -1px; 
+}
+
+.heading-project {
+    font-family: $postGrotesk;
+    font-size: rem(106px);
+    letter-spacing: 0px;
+    line-height: rem(100px);
+}
+
+.paragraph {
+    font-family: $postGrotesk;
+    font-size: rem(12px);
+    line-height: rem(19px);
+
+    &--light {
+        color: $soft-white;
+    }
+}
+
+@include mq-regular {
+    .giant-heading {
+        font-size: rem(350px);
+        line-height: .82em;
+    
+        &--small {
+            font-size: rem(250px);
+        }
+    }
+}
+
+@include mq-extra-narrow {
+    .giant-heading {
+        font-size: rem(160px);
+        line-height: .82em;
+    }
+}

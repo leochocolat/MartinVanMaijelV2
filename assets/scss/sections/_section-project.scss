@@ -1,0 +1,52 @@
+.section-project {
+    background-color: $soft-white;
+}
+
+.section-project__container {
+    padding: 100px 0;
+}
+
+.section-project__list {
+    width: 100%;
+}
+
+.section-project__list-item {
+    display: block;
+
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.section-project__image-container {
+    font-size: 0;
+}
+
+.section-project__image {
+    width: 100%;
+    height: auto;
+}
+
+@include mq-regular {
+    .section-project__container {
+        padding: 160px 0;
+    }
+
+    .section-project__list-item {
+        margin-bottom: 110px;
+    }
+}
+
+@include mq-extra-narrow {
+    .section-project__container {
+        padding: 60px 0;
+    }
+
+    .section-project__list-item {
+        margin-bottom: 25px;
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,54 @@
+.block-project {
+    display: inline-block;
+}
+
+.block-project__container {
+    display: inline-block;
+
+    width: auto;
+}
+
+.block-project__image-container {
+    max-width: 450px;
+
+    font-size: 0px;
+}
+
+.block-project__image {
+    width: 100%;
+    height: auto;
+}
+
+.block-project__infos {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    width: 50%;
+
+    text-align: left;
+    font-size: rem(12px);
+    font-weight: 600;
+}
+
+.block-project__infos-date {
+    font-weight: 400;
+    color: $soft-white;
+}
+
+@include mq-regular {
+    .block-project__image-container {
+        max-width: 600px;
+    }
+}
+
+@include mq-extra-narrow {
+    .block-project__image-container {
+        max-width: 280px;
+    }
+
+    .block-project__infos {    
+        margin-top: 15px;
+        width: 85%;
+    }
+}

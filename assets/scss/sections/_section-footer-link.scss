@@ -1,0 +1,39 @@
+.section-footer-link__container-big {
+    padding-top: 250px;
+}
+
+.section-footer-link__link {
+    color: $yellow;
+    font-size: rem(150px);
+    font-family: $monarch;
+    letter-spacing: rem(-4px);
+}
+
+@include mq-regular {
+    .section-footer-link__container-big {
+        padding-top: 400px;
+    }
+
+    .section-footer-link__link {
+        font-size: rem(290px);
+        line-height: rem(400px);
+        letter-spacing: rem(-10px);
+    }
+}
+
+@include mq-extra-narrow {
+    .section-footer-link__container-big {
+        padding-top: 125px;
+    }
+
+    .section-footer-link {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 50px;
+    }
+    
+    .section-footer-link__link {
+        font-size: rem(90px);
+        letter-spacing: rem(-3px);
+    }
+}

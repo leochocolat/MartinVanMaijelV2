@@ -1,0 +1,140 @@
+.header-home {
+    width: 100%;
+}
+
+.header-home__container {
+    position: relative;
+
+    padding-top: 50px;
+}
+
+.header-home__container-big {
+    margin-top: 130px;
+}
+
+.header-home__brand {
+    display: none;
+}
+
+.header-home__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-top: 150px;
+}
+
+.header-home__social-list {
+    display: none;
+}
+
+.header-home__social-list-item {
+    font-size: rem(12px);
+    line-height: rem(22px);
+    color: $soft-white;
+}
+
+.header-home__description-container {
+    max-width: 500px;
+    width: 80%;
+}
+
+.header-home__description {
+    margin-top: 30px;
+
+    color: $soft-white;
+
+    column-count: 2;
+
+    p {
+        break-inside: avoid;
+    }
+}
+
+.header-home__heading {
+    max-width: 160px;
+
+    em {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+
+        &:before {
+            content: '/'
+        }
+    }
+}
+
+@include mq-regular {
+    .header-home__container {
+        padding-top: 80px;
+    }
+
+    .header-home__content {
+        margin-top: 200px;
+    }
+
+    .header-home__link {
+        margin-left: 200px;
+    }
+    
+    .header-home__social-list {
+        display: block;
+
+        margin-left: 200px;
+    }
+
+    .header-home__description-container {
+        max-width: 500px;
+        width: 50%;
+    }
+}
+
+@include mq-extra-narrow {
+    .header-home__content {
+        margin-top: 100px;
+        padding-left: 30px;
+    }
+
+    .header-home__container-big {
+        margin-top: 80px;
+    }
+
+    .header-home__description {
+        columns: 1;
+
+        max-width: 400px;
+    }
+
+    .header-home__link {
+       position: absolute;
+       right: 0;
+       top: 40px;
+
+       padding-right: 40px;
+
+       &:before {
+           left: auto;
+           right: 0;
+           top: 6px;
+
+           width: 30px;
+
+           background-color: $yellow;
+       }
+    }
+
+    .header-home__brand {
+        display: inline-block;
+
+        margin-left: 30px;
+
+        font-family: $monarch;
+        font-size: rem(12px);
+        line-height: rem(15px);
+    }
+
+    .header-home__container {
+        padding-top: 40px;
+    }
+}

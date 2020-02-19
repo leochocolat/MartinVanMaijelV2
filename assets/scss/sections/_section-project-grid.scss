@@ -1,0 +1,35 @@
+.section-project-grid {
+
+}
+
+.section-project-grid__container {
+    // padding-bottom: 450px;
+}
+
+.section-project-grid__list-item {
+    margin-bottom: 150px;
+
+    &:nth-child(odd) {
+        text-align: right;
+
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include mq-extra-narrow {
+    .section-project-grid__container {
+        // padding-bottom: 200px;
+    }
+
+    .section-project-grid__list-item {
+        margin-bottom: 90px;
+    }
+
+    .section-project-grid__list-item {
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,81 @@
+.body {
+    height: 1000vh;
+    background-color: red;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Light.woff2') format('woff2'),
+        url('PostGrotesk-Light.woff') format('woff'),
+        url('PostGrotesk-Light.svg#PostGrotesk-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Regular.woff2') format('woff2'),
+        url('PostGrotesk-Regular.woff') format('woff'),
+        url('PostGrotesk-Regular.svg#PostGrotesk-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Medium.woff2') format('woff2'),
+        url('PostGrotesk-Medium.woff') format('woff'),
+        url('PostGrotesk-Medium.svg#PostGrotesk-Medium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Bold.woff2') format('woff2'),
+        url('PostGrotesk-Bold.woff') format('woff'),
+        url('PostGrotesk-Bold.svg#PostGrotesk-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-LightItalic.woff2') format('woff2'),
+        url('PostGrotesk-LightItalic.woff') format('woff'),
+        url('PostGrotesk-LightItalic.svg#PostGrotesk-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk Book';
+    src: url('PostGrotesk-BookItalic.woff2') format('woff2'),
+        url('PostGrotesk-BookItalic.woff') format('woff'),
+        url('PostGrotesk-BookItalic.svg#PostGrotesk-BookItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-MediumItalic.woff2') format('woff2'),
+        url('PostGrotesk-MediumItalic.woff') format('woff'),
+        url('PostGrotesk-MediumItalic.svg#PostGrotesk-MediumItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-BoldItalic.woff2') format('woff2'),
+        url('PostGrotesk-BoldItalic.woff') format('woff'),
+        url('PostGrotesk-BoldItalic.svg#PostGrotesk-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+

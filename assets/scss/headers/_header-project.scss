@@ -1,0 +1,155 @@
+.header-project {
+
+}
+
+.header-project__container-big {
+    position: relative;
+}
+
+.header-project__nav-link {
+    position: absolute;
+    left: 0;
+    top: 60px;
+
+    z-index: 1;
+
+    &:before {
+        background-color: $yellow;
+    }
+}
+
+.header-project__container {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    padding-bottom: 150px;
+}
+
+.header-project__heading {
+    transform: translateY(-38%);
+
+    font-size: rem(100px);
+    font-weight: 400;
+
+    em {
+        display: block;
+        margin-left: 50px;
+
+        &:before {
+            content: '/';
+        }
+    }
+}
+
+.header-project__block-introduction {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.header-project__image-container {
+    width: 100%;
+}
+
+.header-project__image {
+    width: 100%;
+    height: auto;
+}
+
+.header-project__introduction-content {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 30px;
+}
+
+.header-project__introduction-left {
+    margin-right: 100px;
+
+    max-width: 80px;
+}
+
+.header-project__introduction-right {
+    max-width: 400px;
+}
+
+.header-project__introduction-title {
+    margin-bottom: 30px;
+
+    font-size: rem(15px);
+    font-weight: 500;
+}
+
+.header-project__introduction-text {
+    font-size: rem(12px);
+    font-weight: 400;
+    line-height: rem(20px);
+    color: transparentize($soft-white, 0.5);
+}
+
+@include mq-regular {
+    .header-project__block-introduction {
+        display: inline-block;
+    }
+
+    .header-project__image-container {
+        height: 100vh;
+    }
+
+    .header-project__image {
+        height: 100%;
+        width: auto;
+    }
+
+    .header-project__heading {
+        position: absolute;
+        top: 45%;
+        left: 0;
+    
+        font-size: rem(100px);
+    }
+
+    .header-project__introduction-content {
+        margin-top: 100px;
+    }
+}
+
+@include mq-extra-narrow {
+    .header-project__container {
+        padding-bottom: 60px;
+    }
+
+    .header-project__introduction-content {
+        justify-content: space-between;
+
+        margin: 0 30px;
+        margin-top: 20px;
+    }
+
+    .header-project__introduction-left {
+        margin-right: 0;
+    }
+
+    .header-project__introduction-left {
+        max-width: auto;
+        width: 100%;
+    }
+
+    .header-project__heading {
+        margin: 0 30px;
+
+        font-size: rem(50px);
+    
+        em {
+            margin-left: 20px;
+        }
+    }
+
+    .header-project__nav-link {
+        left: 30px;
+        top: 40px;
+    }
+}
