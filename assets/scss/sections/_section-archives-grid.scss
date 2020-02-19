@@ -1,0 +1,17 @@
+.section-archives-grid {
+
+}
+
+.section-archives-grid__list {
+    margin: 0 30px;
+}
+
+.section-archives-grid__list-item {
+    margin-bottom: 70px;
+}
+
+@include mq-regular {
+    .section-archives-grid__list-item {
+        margin-bottom: 300px;
+    }
+}

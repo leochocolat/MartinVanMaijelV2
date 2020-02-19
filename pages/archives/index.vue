@@ -2,6 +2,7 @@
   <main class="main page-archives">
     <div class="scroll-container">
       <HeaderArchives :data="data" />
+      <SectionArchivesGrid :archives="archives" />
     </div>
   </main>
 </template>
@@ -17,7 +18,7 @@
   import HeaderArchives from '~/components/headers/HeaderArchives';
 
   //sections
-  import SectionFooterLink from '~/components/sections/SectionFooterLink';
+  import SectionArchivesGrid from '~/components/sections/SectionArchivesGrid';
 
   const client = createClient();
 
@@ -25,8 +26,8 @@
     components: {
       RichTextRenderer,
       ImageContentfulRendered,
-      SectionFooterLink,
-      HeaderArchives
+      HeaderArchives,
+      SectionArchivesGrid
     },
     methods: {
 
