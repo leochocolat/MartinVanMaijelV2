@@ -1,29 +1,77 @@
 .section-footer-link__container-big {
     padding-top: 250px;
+    padding-bottom: 250px;
 }
 
 .section-footer-link__link {
+    position: relative;
+    display: inline-block;
+
     color: $yellow;
     font-size: rem(150px);
+    line-height: rem(80px);
     font-family: $monarch;
     letter-spacing: rem(-4px);
+}
+
+.section-footer-link__link-container {
+    display: inline-block;
+}
+
+.section-footer-link__infos {
+    position: relative;
+
+    display: flex;
+
+    margin-top: 30px;
+    margin-left: 15px;
+
+    font-family: $postGrotesk;
+    font-size: rem(12px);
+    line-height: rem(18px) !important;
+    letter-spacing: 0;
+    color: $white;
+
+    &--next {
+        justify-content: flex-start;
+    }
+    
+    &--previous {
+        width: 100%;
+        text-align: right;
+        justify-content: flex-end;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+.section-footer-link__page-name {
+    font-weight: 600;
+
+    margin-right: 140px;
 }
 
 @include mq-regular {
     .section-footer-link__container-big {
         padding-top: 400px;
+        padding-bottom: 400px;
     }
 
     .section-footer-link__link {
         font-size: rem(290px);
-        line-height: rem(400px);
+        line-height: rem(100px);
         letter-spacing: rem(-10px);
+    }
+
+    .section-footer-link__infos {
+        margin-top: 50px;
     }
 }
 
 @include mq-extra-narrow {
     .section-footer-link__container-big {
         padding-top: 125px;
+        padding-bottom: 125px;
     }
 
     .section-footer-link {
@@ -34,6 +82,16 @@
     
     .section-footer-link__link {
         font-size: rem(90px);
+        line-height: rem(50px);
         letter-spacing: rem(-3px);
+    }
+
+    .section-footer-link__page-name {
+        margin-right: 50px;
+        white-space: nowrap;
+    }
+
+    .section-footer-link__infos {    
+        margin-top: 20px;
     }
 }

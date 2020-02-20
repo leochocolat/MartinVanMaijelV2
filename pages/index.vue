@@ -3,7 +3,7 @@
     <div class="scroll-container">
       <HeaderHome :data="data" />
       <SectionProjectGrid :projects="projects" />
-      <SectionFooterLink :link="'archives'" :content="'archives'" />
+      <SectionFooterLink :link="'archives'" :content="'archives'" :data="archives" />
     </div>
   </main>
 </template>
@@ -43,10 +43,14 @@
         client.getEntries({
           'content_type': 'projects'
         }),
-      ]).then(([data, projects]) => {
+        client.getEntries({
+          'content_type': 'archivesPage'
+        }),
+      ]).then(([data, projects, archives]) => {
         return {
           data: data.items[0],
-          projects: projects.items
+          projects: projects.items,
+          archives: archives.items[0]
         }
       }).catch(console.error)
     }

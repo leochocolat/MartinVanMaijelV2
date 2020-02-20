@@ -1,5 +1,5 @@
 .section-project {
-    background-color: $soft-white;
+    background-color: $white;
 }
 
 .section-project__container {
@@ -18,7 +18,6 @@
     &:last-child {
         margin-bottom: 0;
     }
-
 }
 
 .section-project__image-container {
@@ -30,6 +29,71 @@
     height: auto;
 }
 
+.section-project__infos {
+    width: 80%;
+
+    margin: auto;
+    padding-top: 100px;
+
+    color: $green;
+}
+
+.section-project__infos-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 500px;
+    width: 100%;
+}
+
+.section-project__infos-list-item {
+    width: 33%;
+
+    margin-bottom: 70px;
+
+    strong {
+        display: inline-block;
+
+        margin-bottom: 30px;
+
+        font-size: rem(15px);
+        font-weight: 600;
+    }
+
+    li {
+        font-size: rem(12px);
+        line-height: rem(20px);
+    
+        color: transparentize($green, 0.5); 
+    }
+}
+
+.section-project__infos-link {
+    position: relative;
+
+    padding-left: 70px;
+
+    font-size: rem(12px);
+    font-weight: 500;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        margin: auto;
+
+        width: 55px;
+        height: 1px;
+
+        background-color: $green;
+
+        content: ''
+    }
+}
+
 @include mq-regular {
     .section-project__container {
         padding: 160px 0;
@@ -37,6 +101,14 @@
 
     .section-project__list-item {
         margin-bottom: 110px;
+    }
+
+    .section-project__infos {
+        padding-top: 200px;
+    }
+
+    .section-project__infos {
+        width: 70%;
     }
 }
 
@@ -49,4 +121,18 @@
         margin-bottom: 25px;
         padding: 0 30px;
     }
+
+    .section-project__infos {
+        width: 100%;
+
+        padding-left: 50px;
+        padding-right: 50px;
+
+        box-sizing: border-box;
+    }
+
+    .section-project__infos-list-item {
+        width: 50%;
+    }
+    
 }

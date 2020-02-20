@@ -2,12 +2,10 @@
 
 }
 
-.section-project-grid__container {
-    // padding-bottom: 450px;
-}
-
 .section-project-grid__list-item {
     margin-bottom: 150px;
+
+    transform: translateY(-25%);
 
     &:nth-child(odd) {
         text-align: right;
@@ -21,10 +19,6 @@
 }
 
 @include mq-extra-narrow {
-    .section-project-grid__container {
-        // padding-bottom: 200px;
-    }
-
     .section-project-grid__list-item {
         margin-bottom: 90px;
     }

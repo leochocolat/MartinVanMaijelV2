@@ -3,8 +3,8 @@
     <div class="scroll-container">
       <HeaderProject :data="data" />
       <SectionProject :data="data" />
-      <SectionFooterLink v-if="isNextProjectAvailable(projects)" :link="`projects/${getNextProject()}`" :content="'next'" class="page-home__section-footer-link-next" />
-      <SectionFooterLink v-if="enablePreviousProject(projects)" :link="`projects/${getPreviousProject()}`" :content="'previous'" />
+      <SectionFooterLink v-if="isNextProjectAvailable(projects)" :link="`projects/${getNextProject()}`" :content="'next'" :data="projects[getNextProject()]" class="page-home__section-footer-link-next" />
+      <SectionFooterLink v-if="enablePreviousProject(projects)" :link="`projects/${getPreviousProject()}`" :content="'previous'" :data="projects[getPreviousProject()]"/>
     </div>
   </main>
 </template>
