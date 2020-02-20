@@ -2,7 +2,7 @@
     <header class="header-home">
         <div class="container header-home__container">
             <div class="header-home__brand">
-                m / m
+                M
             </div>
             <a class="header-home__link button" href="/about">about</a>
             <div class="header-home__content">

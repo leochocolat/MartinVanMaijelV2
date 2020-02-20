@@ -108,20 +108,12 @@
 
     .header-home__link {
        position: absolute;
-       right: 0;
+       right: 30px;
        top: 40px;
 
-       padding-right: 40px;
-
-       &:before {
-           left: auto;
-           right: 0;
-           top: 6px;
-
-           width: 30px;
-
-           background-color: $yellow;
-       }
+        &:before {
+            
+        }
     }
 
     .header-home__brand {
