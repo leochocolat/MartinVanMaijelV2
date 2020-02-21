@@ -1,5 +1,5 @@
 <template>
-    <section class="section-footer-link">
+    <section :class="`section-footer-link section-footer-link--${content}`">
         <div class="container container--big section-footer-link__container-big">
             <div class="section-footer-link__link-container">
                 <a :href="`/${ link }`" class="section-footer-link__link">

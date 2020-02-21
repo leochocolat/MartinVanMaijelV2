@@ -8,6 +8,13 @@
     padding-top: 50px;
 }
 
+.header-home__link {
+    &:before {
+        left: 0;
+        width: 50%;
+    }
+}
+
 .header-home__container-big {
     margin-top: 130px;
 }
@@ -112,7 +119,9 @@
        top: 40px;
 
         &:before {
-            
+            left: auto;
+            right: 0;
+            width: 50%;
         }
     }
 
